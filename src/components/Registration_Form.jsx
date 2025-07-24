@@ -321,7 +321,7 @@ const Step5 = ({ formData, setFormData, onNext, onPrev }) => (
 );
 
 // Step 6 of registration form
-const Step6 = ({ formData, onPrev }) => (
+const Step6 = ({ formData, onPrev, onClose }) => (
   <div className="animate-fade-in-up">
     <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">
       Step 6: Review and Submit
@@ -351,7 +351,10 @@ const Step6 = ({ formData, onPrev }) => (
       </button>
       <button
         className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 transition"
-        onClick={() => alert("Form Submitted!")}
+        onClick={() => {
+          // You can add your form submission logic here
+          if (onClose) onClose();
+        }}
       >
         Submit
       </button>
