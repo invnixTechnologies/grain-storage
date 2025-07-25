@@ -320,11 +320,11 @@ const DashboardLayout = ({ children }) => {
               {dropdownOpen && (
                 <div
                   ref={dropdownRef}
-                  className="absolute right-2 mt-50 w-44 backdrop-blur-sm bg-slate-100/70 dark:bg-gray-800/90 rounded-xl shadow-lg z-50 "
+                  className="absolute right-2 mt-50 w-44 backdrop-blur-sm bg-slate-100/70 dark:bg-gray-800/90 rounded-xl shadow-lg z-500 "
                 >
                   <ThemeToggle
                     cssClass={
-                      "px-4 py-2 text-gray-700 dark:text-white hover:backdrop-blur-sm hover:bg-white/80 hover:dark:bg-gray-700 rounded-t-xl w-full flex items-center gap-2"
+                      "px-4 py-2 text-gray-700 dark:text-white hover:backdrop-blur-sm hover:bg-white/80 hover:dark:bg-gray-700 rounded-t-xl w-full flex items-center gap-2 "
                     }
                   />
                   <Link
